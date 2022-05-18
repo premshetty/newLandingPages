@@ -89,7 +89,8 @@ const sites = [
   "https://apollodelhi.intpatient.com/",
   "https://cancerapollo.intpatient.com/",
   "https://fortisescortsdelhi.intpatient.com/",
-  "https://hosplan.com/",
+  "https://new-landing-pages.vercel.app/",
+  "https://hosplan.com/hospital/fortis-hospital-shalimar-bagh",
 ];
 const checkStatusCode = () => {
   const writehere = document.getElementById("site-status");
@@ -104,8 +105,15 @@ const checkStatusCode = () => {
         }
       })
       .catch((err) => {
-        writehere.innerHTML += `<a class="down" href=${site} style='color:white;'>${site}  is down</a>`;
+        writehere.innerHTML += `<div class="down">
+        <a  href=${site} style='color:white;'>${site}  is down</a>
+        <details>
+  <summary>more details</summary>
+  <p>${err.message}</p>
+</details`;
       });
   });
 };
+const sortbyUp = () => {};
+const sortbyDown = () => {};
 checkStatusCode();

@@ -1,5 +1,6 @@
-#site-status > a {
-  height: 50px;
+#site-status > a,
+#site-status > div {
+  min-height: 50px;
 
   width: 400px;
   padding: 20px 25px;
@@ -8,17 +9,26 @@
   border: 2px black;
   text-size-adjust: inherit;
   white-space: inherit;
+  border-radius: 5px;
 }
 .up {
-  background-color: green;
+  background-color: rgba(0, 128, 0, 0.651);
   color: white;
+  font-weight: bold;
 }
 .down {
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.651);
   color: white;
+  font-weight: bold;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
 }
 #site-status {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+}
+.center {
+  text-align: center;
 }
