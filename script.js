@@ -1,105 +1,163 @@
-const sites = [
-  "http://abdomenplasticsurgery.intpatient.com/",
-  "http://abdominoplasty.intpatient.com/",
-  "http://allelective.intpatient.com/",
-  "http://angiography.intpatient.com/",
-  "http://angioplasty.intpatient.com/",
-  "http://anteriorligament.intpatient.com/",
-  "http://antiageing.intpatient.com/",
-  "http://antiagingstemcell.intpatient.com/",
-  "http://antiagingweightloss.intpatient.com/",
-  "http://aorticrepair.intpatient.com/",
-  "http://aplasticanaemia.intpatient.com/",
-  "http://ar-apollohospitals.intpatient.com",
-  "http://ar-apollohyderabad.intpatient.com/",
-  "http://ar-blkhospital.intpatient.com/",
-  "http://ar-bonemarrowtransplant.intpatient.com/",
-  "http://ar-breastcancer.intpatient.com/",
-  "http://ar-cabginindia.intpatient.com/",
-  "http://ar-cancerindia.intpatient.com/",
-  "http://ar-cardiachospitals.intpatient.com/",
-  "http://ar-cervicalcancer.intpatient.com/",
-  "http://ar-cosmetichospitals.intpatient.com/",
-  "http://ar-deepstimulation.intpatient.com/",
-  "http://ar-dentalhospitals.intpatient.com/",
-  "http://ar-eyehospitals.intpatient.com/",
-  "http://ar-gicancer.intpatient.com/",
-  "http://ar-globalhospital.intpatient.com/",
-  "http://ar-hairtransplant.intpatient.com/",
-  "http://ar-hcghospital.intpatient.com/",
-  "http://ar-hearttransplant.intpatient.com/",
-  "http://ar-hipreplacement.intpatient.com/",
-  "http://ar-holeinheart.intpatient.com/",
-  "http://ar-hospitalsindia.intpatient.com/",
-  "http://ar-ivfhospitals.intpatient.com/",
-  "http://ar-jaslokhospital.intpatient.com/",
-  "http://ar-kidneytransplant.intpatient.com/",
-  "http://ar-kneereplacement.intpatient.com/",
-  "http://ar-livertransplant.intpatient.com/",
-  "http://ar-lungtransplant.intpatient.com/",
-  "http://ar-lungtransplant.intpatient.com/",
-  "http://ar-maxhospital.intpatient.com/",
-  "http://ar-neurologyhospitals.intpatient.com/",
-  "http://ar-oncologyhospitals.intpatient.com/",
-  "http://ar-orthopedichospital.intpatient.com/",
-  "http://ar-pacemaker.intpatient.com/",
-  "http://ar-prostatecancer.intpatient.com/",
-  "http://ar-shoulderreplacement.intpatient.com/",
-  "http://ar-stemcell.intpatient.com/",
-  "http://ar-strokehospital.intpatient.com/",
-  "http://ar-surgeryinindia.intpatient.com/",
-  "http://ar-transplanthospitals.intpatient.com/",
-  "http://artemishospital.intpatient.com/",
-  "http://arthroscopicsurgery.intpatient.com/",
-  "http://artificialdiscreplacement.intpatient.com/",
-  "http://asianhearthospital.intpatient.com/",
-  "http://astigmatismtreatment.intpatient.com/",
-  "http://atrialfibrillation.intpatient.com/",
-  "http://atrialseptaldefect.intpatient.com/",
-  "http://atrioventriculardefect.intpatient.com/",
-  "http://ayurveda.intpatient.com/",
-  "http://balloonatrialseptostomy.intpatient.com/",
-  "http://basalcellcancer.intpatient.com/",
-  "http://biventricular.intpatient.com/",
-  "http://bladdercancertreatment.intpatient.com/",
-  "http://bladderincision.intpatient.com/",
-  "http://bloodcancer.intpatient.com/",
-  "http://bonemarrowtransplant.intpatient.com/",
-  "http://brachialplexusinjury.intpatient.com/",
-  "http://braintumor.intpatient.com/",
-  "http://breastaugmentation.intpatient.com/",
-  "http://breastcancer.intpatient.com/",
-  "http://browliftsurgery.intpatient.com/",
-  "http://browplastyforeheadlift.intpatient.com/",
-  "http://bunionectomy.intpatient.com/",
-  "http://cabginindia.intpatient.com/",
-  "http://cancerindia.intpatient.com/",
-  "http://carcinoidtumourstreatment.intpatient.com/",
-  "http://cardiachospitals.intpatient.com/",
-  "http://cardiologyfortis.intpatient.com/",
-  "http://carehospital.intpatient.com/",
-  "http://carotidarterystenosis.intpatient.com/",
-  "http://carpaltunnel.intpatient.com/",
-  "http://cerebralangiogram.intpatient.com/",
-  "http://cerebralangioplasty.intpatient.com",
-  "http://cervicalcancer.intpatient.com/",
-  "http://cervicalfusion.intpatient.com/",
-  "http://cheekaugmentation.intpatient.com/",
-  "https://medanta.intpatient.com/",
+[
+  "https://lungtransplant.intpatient.com	 ",
+
+  "https://lvad.intpatient.com	  ",
+
+  "https://lymphoma.intpatient.com	  ",
+
+  "https://maxhospital.intpatient.com	 ",
+
+  "https://maxhospitalindia.intpatient.com	 ",
+
+  "https://maxsaket.intpatient.com	",
+
+  "https://medanta.intpatient.com	",
+
+  "https://medantahospital.intpatient.com	 ",
+
+  "https://mh.intpatient.com	  	",
+
+  "https://multiplemyeloma.intpatient.com	 ",
+
+  "https://multiplescelorosis.intpatient.com	  ",
+
+  "https://multiplesclerosis.intpatient.com	 ",
+
+  "https://myomectomy.intpatient.com	 ",
+
+  "https://narayanahospital.intpatient.com	",
+
+  "https://neurologyhospitals.intpatient.com	 ",
+
+  "https://neurologyindia.intpatient.com	 ",
+
+  "https://novaivi.intpatient.com	",
+
+  "https://nr-oncologyhospitals.intpatient.com	",
+
+  "https://oncologyhospitals.intpatient.com",
+
+  "https://opticalinternal.intpatient.com	",
+
+  "https://oralcancer.intpatient.com	 ",
+
+  "https://orthopedichospital.intpatient.com	 ",
+
+  "https://ovariancystectomy.intpatient.com	",
+
+  "https://pacemaker.intpatient.com	 ",
+
+  "https://partialpenectomy.intpatient.com	 ",
+
+  "https://peripheralsurgery.intpatient.com	 ",
+
+  "https://prostatecancer.intpatient.com	 ",
+
+  "https://prostatectomy.intpatient.com	 ",
+
+  "https://radiationtherapy.intpatient.com	 ",
+
+  "https://radicalprostatectomy.intpatient.com	 ",
+
+  "https://radiofrequencyrhizotomy.intpatient.com	",
+
+  "https://rapidarc.intpatient.com	 ",
+
+  "https://relainstitute.intpatient.com	",
+
+  "https://ru-apollohospitals.intpatient.com	 ",
+
+  "https://ru-ayurveda.intpatient.com",
+
+  "https://ru-braintumor.intpatient.com	 ",
+
+  "https://ru-breastcancer.intpatient.com	",
+
+  "https://ru-cancerindia.intpatient.com	",
+
+  "https://ru-cardiachospitals.intpatient.com	",
+
+  "https://ru-fortishospital.intpatient.com	",
+
+  "https://ru-gallbladdercancer.intpatient.com	",
+
+  "https://ru-hospitalsindia.intpatient.com	",
+
+  "https://ru-medantahospital.intpatient.com	",
+
+  "https://ru-prostatecancer.intpatient.com	",
+
+  "https://ru-spinalompression.intpatient.com	 ",
+
+  "https://ru-spinalfusion.intpatient.com",
+
+  "https://ru-surgeryinindia.intpatient.com	",
+
+  "https://ru-treatmentinindia.intpatient.com	",
+
+  "https://sakrahospital.intpatient.com	 ",
+
+  "https://savecost.intpatient.com	",
+
+  "https://sevenhillshospital.intpatient.com	",
+
+  "https://shalbyhospital.intpatient.com	 ",
+
+  "https://shavingofcartilage.intpatient.com	",
+
+  "https://shoulderreplacement.intpatient.com	",
+
+  "https://sicklecell.intpatient.com	 ",
+
+  "https://simschennai.intpatient.com",
+
+  "https://simshospital.intpatient.com	",
+
+  "https://spinalompression.intpatient.com	",
+
+  "https://spinalfusion.intpatient.com	  ",
+
+  "https://staging.handy-amplifier-259811.appspot.com	 ",
+
+  "https://stemcell.intpatient.com	  ",
+
+  "https://stomachcancer.intpatient.com	",
+
+  "https://stroke.intpatient.com	 ",
+
+  "https://surgeryinindia.intpatient.com	 ",
+
+  "https://surgicalatrial.intpatient.com	 ",
+
+  "https://systemicpulmonary.intpatient.com	",
+
+  "https://thalassemia.intpatient.com	 ",
+
+  "https://thymectomy.intpatient.com	 ",
+
+  "https://topratedhospitals.intpatient.com	",
+
+  "https://totalpenectomy.intpatient.com	 ",
+
+  "https://transplanthospitals.intpatient.com	  ",
+
+  "https://treatmentinindia.intpatient.com	",
+
+  "https://turbendoscopic.intpatient.com	 ",
+
+  "https://turptuevplaser.intpatient.com	  ",
+
+  "https://vagalnervestimulator.intpatient.com	   ",
+
+  "https://valvereplacement.intpatient.com	   ",
+
+  "https://vasectomy.intpatient.com	  	   	 	",
+
+  "https://ventricularseptal.intpatient.com	   ",
+
+  "https://wockhardthospitals.intpatient.com	 ",
+
+  "https://www.intpatient.com 	 	",
+
+  "https://yashodahospital.intpatient.com	",
 ];
-const checkStatusCode = () => {
-  sites.forEach((site) => {
-    fetch(site)
-      .then((response) => {
-        if (response.status === 200) {
-          console.log(`${site} is up`);
-        } else {
-          console.log(`${site} is down with status code ${response.status}`);
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  });
-};
-checkStatusCode();
